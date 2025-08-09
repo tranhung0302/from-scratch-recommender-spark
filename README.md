@@ -23,7 +23,7 @@ Content-based filtering uses item features to recommend other items similar to w
 
 3. Compute similarity between the user profile and candidate items
 
-    * Common similarity measures: cosine similarity, dot product, Pearson correlation.
+    * Common similarity measures: cosine similarity, dot product, Pearson correlation, Euclidean distance.
 
 4. Rank and recommend items with the highest similarity scores.
 
@@ -47,7 +47,7 @@ Let’s say we’re recommending movies.
 | C       |      1 |      1 |     0 |  
 
 ```
-If the user with id 1 liked A and C:
+If the user with id 1 liked A and C, the user's profile should be like this:
 
 - Movie A: [5, 0, 5]
 - Movie C: [3, 3, 0]
